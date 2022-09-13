@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(30, 38%, 92%);
+}
+h1, h2, h3{
+  font-family: 'Fraunces', serif;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.container{
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  height: 450px;
+  width: 300px;
+  border-radius: 12px 0px 0px 12px;
+  background: url('./images/image-product-desktop.jpg') no-repeat center center/cover;
+}
+
+.showcase{
+  height: 450px;
+  width: 300px;
+  background: #ffff;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 30px;
+}
+
+.title p{
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: hsl(228, 12%, 48%);
+}
+.title h1{
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.product-info p{
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 20px;
+}
+.price{
+  display: flex;
+
+}
+.price .main{
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  margin-right: 30px;
+}
+.price .old{
+  
+  color: hsl(228, 12%, 48%);
+  padding-top: 5px;
+  text-decoration: line-through;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 28px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  width: 100%;
+  border: none;
+  background: hsl(158, 36%, 37%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+}
+button img{
+  margin-right: 10px;
+}
+
+
+@media(max-width: 600px){
+  .container-content{
+    flex-direction: column;
+
+  }
+  .image{
+    height: 220px;
+    background: url('./images/image-product-mobile.jpg') no-repeat center center/cover;
+  }
+  .showcase{
+    border-radius: 0px 0px 12px 12px;
+  }
+  .image{
+    border-radius: 12px 12px 0px 0px;
+  }
+}
